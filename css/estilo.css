@@ -68,6 +68,12 @@
   color: white;
   background-color: black;
   text-align: center; }
+  .footer .footerLogo {
+    border: 1px solid #800a0a;
+    width: 85px;
+    height: 85px;
+    margin-left: 47%;
+    margin-top: 30px; }
 
 /* especialidades */
 .especialidades {
