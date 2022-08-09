@@ -1,94 +1,32 @@
 @charset "UTF-8";
 /*     fuente  */
 @import url("https://fonts.googleapis.com/css2?family=Arima:wght@300&display=swap");
-/*     estilo header  */
-body {
-  background-image: url(/img/fondo.jpg);
-  /*    Menú de navegación */
-  /*     estilo index */
-  /*     footer  */ }
-  body header h1 .logoDos {
-    height: 400px;
-    width: 100%;
-    background-image: url("../img/Logo 2.png");
-    background-size: cover; }
-    body header h1 .logoDos .logoUno {
-      width: 300px;
-      height: 300px;
-      background-image: url("../img/Logo 1.png");
-      background-size: contain;
-      border: 1px solid black black;
-      position: absolute;
-      top: 50px;
-      left: 10px;
-      border-radius: 150px;
-      animation-name: animacion;
-      animation-iteration-count: 1;
-      animation-timing-function: ease-in;
-      animation-duration: 2s;
-      animation-delay: 1s; }
-  body .navbar {
-    font-weight: bold;
-    font-size: 1.3rem; }
-  body main {
-    font-family: 'Arima', cursive;
-    background-size: cover;
-    font-weight: bold;
-    /*   especialidades  */ }
-    body main .especialidades {
-      text-align: center;
-      row-gap: 100px;
-      justify-items: center; }
-      body main .especialidades .integral {
-        border: 2px solid black;
-        width: 400px;
-        height: 400px;
-        border-radius: 20px;
-        grid-area: integral;
-        transition: all 0.8s; }
-      body main .especialidades .implantes {
-        border: 2px solid black;
-        width: 400px;
-        height: 400px;
-        border-radius: 20px;
-        grid-area: implantes;
-        transition: all 0.8s; }
-      body main .especialidades .ortodoncia {
-        border: 2px solid black;
-        width: 400px;
-        height: 400px;
-        border-radius: 20px;
-        grid-area: ortodoncia;
-        transition: all 0.8s; }
-      body main .especialidades .endodoncia {
-        border: 2px solid black;
-        width: 400px;
-        height: 400px;
-        border-radius: 20px;
-        grid-area: endodoncia;
-        transition: all 0.8s; }
-      body main .especialidades .integral:hover,
-      body main .especialidades .implantes:hover,
-      body main .especialidades .ortodoncia:hover,
-      body main .especialidades .endodoncia:hover {
-        width: 450px;
-        height: 450px; }
-  body .especialidades {
-    display: grid;
-    grid-template-areas: "integral implantes" "ortodoncia endodoncia"; }
-  body .especialidades img {
+/* Header */
+.header h1 .logoDos {
+  height: 400px;
+  width: 100%;
+  background-image: url("../img/Logo 2.png");
+  background-size: cover; }
+  .header h1 .logoDos .logoUno {
     width: 300px;
-    height: 300px; }
-  body footer {
-    color: white;
-    background-color: black;
-    text-align: center; }
-    body footer .footerLogo {
-      border: 1px solid #800a0a;
-      width: 85px;
-      height: 85px;
-      margin-left: 47%;
-      margin-top: 30px; }
+    height: 300px;
+    background-image: url("../img/Logo 1.png");
+    background-size: contain;
+    border: 1px solid black;
+    position: absolute;
+    top: 50px;
+    left: 10px;
+    border-radius: 150px;
+    animation-name: animacion;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: 2s;
+    animation-delay: 1s; }
+
+/*    Menú de navegación */
+.navbar {
+  font-weight: bold;
+  font-size: 1.3rem; }
 
 @keyframes animacion {
   10% {
@@ -111,6 +49,121 @@ body {
     transform: rotate(324deg); }
   100% {
     transform: rotate(360deg); } }
+
+/* Footer*/
+/*.footer {
+    color: white;
+    background-color: black;
+    text-align: center;
+
+    .footerLogo {
+        border: 1px solid rgb(128, 10, 10);
+        width: 85px;
+        height: 85px;
+        margin-left: 47%;
+        margin-top: 30px;
+    }
+}*/
+.footer {
+  color: white;
+  background-color: black;
+  text-align: center; }
+
+/* especialidades */
+.especialidades {
+  display: grid;
+  text-align: center;
+  justify-items: center;
+  grid-template-areas: "integral implantes" "ortodoncia endodoncia";
+  row-gap: 100px; }
+  .especialidades img {
+    width: 300px;
+    height: 300px; }
+  .especialidades .integral {
+    width: 400px;
+    height: 400px;
+    border: 2px solid black;
+    border-radius: 20px;
+    grid-area: integral;
+    transition: all 0.8s;
+    margin-top: 15%; }
+  .especialidades .implantes {
+    width: 400px;
+    height: 400px;
+    border: 2px solid black;
+    border-radius: 20px;
+    grid-area: implantes;
+    transition: all 0.8s;
+    margin-top: 15%; }
+  .especialidades .ortodoncia {
+    width: 400px;
+    height: 400px;
+    border: 2px solid black;
+    border-radius: 20px;
+    grid-area: ortodoncia;
+    transition: all 0.8s; }
+  .especialidades .endodoncia {
+    width: 400px;
+    height: 400px;
+    border: 2px solid black;
+    border-radius: 20px;
+    grid-area: endodoncia;
+    transition: all 0.8s; }
+  .especialidades .integral:hover {
+    width: 450px;
+    height: 450px; }
+  .especialidades .implantes:hover {
+    width: 450px;
+    height: 450px; }
+  .especialidades .ortodoncia:hover {
+    width: 450px;
+    height: 450px; }
+  .especialidades .endodoncia:hover {
+    width: 450px;
+    height: 450px; }
+
+/*     estilo header  */
+body {
+  background-image: url(/img/fondo.jpg);
+  /*     estilo index */
+  /*     footer  */
+  /*footer {
+    color: white;
+    background-color: black;
+    text-align: center;
+
+    .footerLogo {
+      border: 1px solid rgb(128, 10, 10);
+      width: 85px;
+      height: 85px;
+      margin-left: 47%;
+      margin-top: 30px;
+    }
+  }*/ }
+  body header h1 .logoDos {
+    height: 400px;
+    width: 100%;
+    background-image: url("../img/Logo 2.png");
+    background-size: cover; }
+    body header h1 .logoDos .logoUno {
+      width: 300px;
+      height: 300px;
+      background-image: url("../img/Logo 1.png");
+      background-size: contain;
+      border: 1px solid black black;
+      position: absolute;
+      top: 50px;
+      left: 10px;
+      border-radius: 150px;
+      animation-name: animacion;
+      animation-iteration-count: 1;
+      animation-timing-function: ease-in;
+      animation-duration: 2s;
+      animation-delay: 1s; }
+  body main {
+    font-family: 'Arima', cursive;
+    background-size: cover;
+    font-weight: bold; }
 
 @media (max-width: 670px) {
   .logoDos {

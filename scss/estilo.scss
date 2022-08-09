@@ -1,11 +1,16 @@
 /*     fuente  */
 @import url('https://fonts.googleapis.com/css2?family=Arima:wght@300&display=swap');
 
+@import "headerNavbar";
+@import "footer";
+@import "especialidades";
+
+
 /*     estilo header  */
 body {
   background-image: url(/img/fondo.jpg);
 
-  header {
+ header {
     h1 {
       .logoDos {
         height: 400px;
@@ -34,88 +39,17 @@ body {
     }
   }
 
-  /*    Menú de navegación */
-  .navbar {
-    font-weight: bold;
-    font-size: 1.3rem;
-  }
-
   /*     estilo index */
   main {
     font-family: 'Arima', cursive;
     background-size: cover;
     font-weight: bold;
 
-    /*   especialidades  */
-    .especialidades {
-      text-align: center;
-      
-      
-      row-gap: 100px;
-      justify-items: center;
-
-      
-
-      .integral {
-        border: 2px solid black;
-        width: 400px;
-        height: 400px;
-        border-radius: 20px;
-        grid-area: integral;
-        // margin-top: 15%;
-        transition: all 0.8s;
-      }
-
-      .implantes {
-        border: 2px solid black;
-        width: 400px;
-        height: 400px;
-        border-radius: 20px;
-        grid-area: implantes;
-        // margin-top: 15%;
-        transition: all 0.8s;
-      }
-
-      .ortodoncia {
-        border: 2px solid black;
-        width: 400px;
-        height: 400px;
-        border-radius: 20px;
-        grid-area: ortodoncia;
-        transition: all 0.8s;
-      }
-
-      .endodoncia {
-        border: 2px solid black;
-        width: 400px;
-        height: 400px;
-        border-radius: 20px;
-        grid-area: endodoncia;
-        transition: all 0.8s;
-      }
-
-      .integral:hover,
-      .implantes:hover,
-      .ortodoncia:hover,
-      .endodoncia:hover {
-        width: 450px;
-        height: 450px;
-      }
-    }
-  }
-  .especialidades{
-    display: grid;
-    grid-template-areas: 
-    "integral implantes"
-    "ortodoncia endodoncia";
-  }
-  .especialidades img {
-    width: 300px;
-    height: 300px;
+    
   }
 
   /*     footer  */
-  footer {
+  /*footer {
     color: white;
     background-color: black;
     text-align: center;
@@ -127,51 +61,13 @@ body {
       margin-left: 47%;
       margin-top: 30px;
     }
-  }
+  }*/
 }
 
 
-@keyframes animacion {
-  10% {
-    transform: rotate(36deg);
-  }
 
-  20% {
-    transform: rotate(72deg);
-  }
 
-  30% {
-    transform: rotate(108);
-  }
 
-  40% {
-    transform: rotate(144);
-  }
-
-  50% {
-    transform: rotate(180deg);
-  }
-
-  60% {
-    transform: rotate(216deg);
-  }
-
-  70% {
-    transform: rotate(252deg);
-  }
-
-  80% {
-    transform: rotate(288deg);
-  }
-
-  90% {
-    transform: rotate(324deg);
-  }
-
-  100% {
-    transform: rotate(360deg);
-  }
-}
 
 
 

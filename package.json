@@ -243,5 +243,13 @@
     "yargs": "^17.5.1",
     "yargs-parser": "^20.2.9"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jonihauff/sass.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jonihauff/sass/issues"
+  },
+  "homepage": "https://github.com/jonihauff/sass#readme",
   "description": ""
 }
